@@ -33,6 +33,23 @@ The gallery displays images along with their authors and allows users to navigat
 
 ![Project Screenshot](./public/preview.png)
 
+## 📁 Project Structure
+
+```bash
+├── public/
+    └── preview.png
+├── vite.config.js
+├── src/
+    ├── main.jsx
+    ├── index.css
+    └── App.jsx
+├── .gitignore
+├── index.html
+├── package.json
+├── eslint.config.js
+└── README.md
+```
+
 ## 🎯 Purpose
 
 This project was created for **practicing React concepts**, including:
@@ -50,6 +67,6 @@ This project was created for **practicing React concepts**, including:
 - Improve pagination UI
 - Add responsive design improvements
 
-## Purpose
+## 📚 What I Learned
 
 This project was built to practice **React fundamentals** such as **API fetching**, **state management with hooks**, and implementing **pagination** in a dynamic **image gallery**.
