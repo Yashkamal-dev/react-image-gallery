@@ -3,14 +3,13 @@ import React, { useEffect, useState } from "react";
 const App = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
-  const API = `https://picsum.photos/v2/list?page=${page}&limit=30`;
 
   useEffect(() => {
-    fetch(API)
+    fetch(`https://picsum.photos/v2/list?page=${page}&limit=30`)
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => console.error(err));
-  }, [API]);
+  }, [page]);
 
   const galleryLoader = () => {
     if (data.length == 0) {
